@@ -1,0 +1,28 @@
+*superpy.txt*   Plugin that allows inserting Python's super statements
+
+==============================================================================
+Author: Lukasz Balcerzak <lukaszbalcerzak@gmail.com>          *superpy-author*
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+INTRODUCTION                                                         *superpy*
+
+This plugin adds command for fast inserting Python's super statements.
+
+:SuperpySuper                                                  *:SuperpySuper*
+
+    Tries to find last method inside class definition and inserts super call.
+
+
+HOW TO USE
+
+Simply call :SuperpySuper method if you want this plugin to automatically
+insert super statement.
+
+You may want to add mapping to your |vimrc|:
+
+:nmap <C-s> :SuperpySuper<CR>
+:imap <C-s> <C-O>:SuperpySuper<CR>
+
+See http://github.com/lukaszb/superpy for more information.
+
